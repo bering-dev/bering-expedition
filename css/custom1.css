@@ -1,0 +1,83 @@
+body, #fh5co-header #navbar li a, h1,h2,h3,h4,h5,h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a, a:hover, a:active, a:focus,
+#fh5co-header.navbar-fixed-top #navbar li.active a,
+#fh5co-header.navbar-fixed-top #navbar li a:hover,
+#fh5co-header.navbar-fixed-top .navbar-brand,
+.fh5co-nav-toggle i, .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
+  color: #00a9d1;
+}
+
+#fh5co-header.navbar-fixed-top #navbar li.active a span:before,
+.section-heading h2:after,
+.fh5co-nav-toggle i, .fh5co-nav-toggle i:before, .fh5co-nav-toggle i:after {
+  background-color: #00a9d1;
+}
+
+.watch-video .btn-video {
+  border-color: #00a9d1;
+}
+
+#fh5co-work:before, #fh5co-work:after,
+#fh5co-counters:before, #fh5co-counters:after,
+#fh5co-services:before, #fh5co-services:after {
+  display: none;
+}
+
+#fh5co-services, #fh5co-work, #fh5co-counters {
+  padding-top: 5rem;
+}
+
+#fh5co-header .navbar-brand {
+  background-image: url(../images/logo_small.png);
+  width: 70px;
+  height: 40px;
+  margin-top: 7px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header .navbar-brand {
+    background-image: url(../images/logo_small_blue.png);
+  }
+}
+
+#fh5co-header.navbar-fixed-top .navbar-brand{
+  background-image: url(../images/logo_small_blue.png);
+}
+
+#fh5co-home {
+  background-image: url(../images/bering-and-others.png);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#fh5co-home .text-inner {
+  vertical-align: initial;
+  padding-top: 30rem;
+}
+
+#fh5co-home .text-inner h1, #fh5co-home .text-inner h2 {
+  text-transform: uppercase;
+}
+
+#fh5co-home img {
+  padding-top: 5rem;
+}
+
+#fh5co-intro {
+  margin-top: 0;
+  padding-top: 5rem;
+}
+
+#fh5co-work {
+  background-color: white;
+  background-image: none;
+}
+#fh5co-work .container{
+  padding-top: 4rem;
+  background: url(../images/map_bg.png) no-repeat;
+  background-position: top left;
+  min-height: 1000px;
+  text-align: left;
+}
