@@ -145,9 +145,14 @@ a, a:hover, a:active, a:focus,
   margin-bottom: 0.5rem;
 }
 
-#fh5co-events .blue-form {
+.blue-form {
   background-color: #00a9d1;
   padding-bottom: 1rem;
+}
+
+.blue-form h3 {
+  color: white;
+  letter-spacing: 1.5px;
 }
 
 #fh5co-events input, #fh5co-events textarea {
@@ -193,4 +198,31 @@ a, a:hover, a:active, a:focus,
   background-color: #4c727b;
   border: 1px solid white;
   letter-spacing: 1px;
+}
+
+/* ALBUMS SECTION */
+#fh5co-albums {
+  padding-top: 5rem;
+}
+
+#fh5co-albums [role=image-container] {
+  padding-right: 5rem;
+}
+
+#fh5co-albums .image-block {
+  max-height: 512px;
+  text-align: center;
+  background-color: #00a9d1;
+}
+#fh5co-albums .image-block img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#fh5co-albums .blue-form h3 {
+  margin-top: 1rem;
+}
+
+#fh5co-albums .blue-form {
+  height: 482px;
 }

@@ -128,7 +128,7 @@
 		var lastScrollTop = 0;
 
 		$(window).scroll(function(event){
-
+			console.log('wow')
 		   	var header = $('#fh5co-header'),
 				scrlTop = $(this).scrollTop();
 
