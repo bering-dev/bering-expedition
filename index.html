@@ -50,8 +50,6 @@
     
     <link rel="stylesheet" href="css/custom1.css">
     
-    <link rel="stylesheet" href="css/custom2.css">
-    
 
     
     <script src="js/modernizr-2.6.2.min.js"></script>
@@ -82,6 +80,10 @@
 
                     
                     <li><a href="#" data-nav-section="map"><span>Карта</span></a></li>
+                    
+
+                    
+                    <li><a href="#" data-nav-section="events"><span>Мероприятия</span></a></li>
                     
 
                     
@@ -208,6 +210,124 @@
 
        	
 
+        
+            	<section id="fh5co-events" data-section="events">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-8 to-animate top-gap events-info-column">
+							<div class="section-heading">
+								<h2>Ближайшие мероприятия</h2>
+							</div>
+
+							<div class='row'>
+								<div class='col-md-12'>
+									
+									<p class='event-subtitle'>
+										1 марта. Оса, открытие фотовыставки «Маршрутами Великой Северной экспедиции.  Остров Беринга»
+									</p>
+									<img src="images/events/some_pic.png" class='event-image'/>
+									<p>Полное описание события</p>
+									
+								</div>
+								
+									<div class="col-md-4 col-sm-6 col-xs-12 event-small-block">
+										<h3>26 марта - 1 апреля</h3>
+										<p>Приезд в Пермский край потомка Витуса Беринга</p>
+									</div>
+								
+									<div class="col-md-4 col-sm-6 col-xs-12 event-small-block">
+										<h3>30 марта</h3>
+										<p>Соликамск, открытие фотовыставки «Маршрутами Великой Северной экспедиции.  Остров Беринга».</p>
+									</div>
+								
+									<div class="col-md-4 col-sm-6 col-xs-12 event-small-block">
+										<h3>1 апреля</h3>
+										<p>Пермь, создание музейной передвижной тематической выставки «Маршрутами Великой Северной экспедиции. Пермский край».</p>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-md-4 to-animate blue-form">
+							<h3 class='top-gap text-center'>Регистрация</h3>
+							  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbxInPNCq4Mgdr_ttU7E8T9zheCDkjHs6VsWaQdYTF1d0MxeIgQ/exec">
+							    
+
+							    <fieldset class="pure-group">
+							      <label for="surname">Фамилия </label>
+							      <input id="surname" name="surname" required />
+							    </fieldset>
+
+							    <fieldset class="pure-group">
+							      <label for="name">Имя</label>
+							      <input id="name" name="name" required/>
+							    </fieldset>
+
+							    <fieldset class="pure-group">
+							      <label for="second_name">Отчество</label>
+							      <input id="second_name" name="second_name"/>
+							    </fieldset>
+
+							    <fieldset class="pure-group">
+							      <label for="phone">Телефон</label>
+							      <input id="phone" name="phone"/>
+							    </fieldset>
+
+							    <fieldset class="pure-group">
+							      <label for="email">E-mail</label>
+							      <input id="email" name="email" type="email" value=""
+							      required placeholder="your.name@email.com"/>
+							      <span id="email-invalid" style="visibility:hidden">
+							        Email содержит ошибки</span>
+							    </fieldset>
+
+							    <fieldset class="pure-group">
+							      <p>В каком мероприятии вы<br/>хотели бы принять участие?</p>
+							      <div class='events-group'>
+							      
+							      	<label>
+												<input type="checkbox" id="0326_bering_coming" name="0326_bering_coming" value="Да">
+												26.03 Встреча с М.Т.Берингом
+											</label>
+										
+							      	<label>
+												<input type="checkbox" id="0330_osa_exhibition" name="0330_osa_exhibition" value="Да">
+												30.03 Открытие выставки в Соликамске
+											</label>
+										
+							      	<label>
+												<input type="checkbox" id="0401_perm_exhibition" name="0401_perm_exhibition" value="Да">
+												01.04 Создание выставки в Перми
+											</label>
+										
+										</div>
+									</fieldset>
+							    <fieldset class="pure-group">
+							      <label for="comment">Комментарий</label>
+							      <textarea id="comment" name="comment" rows="5"
+							      placeholder="Не более ста символов"></textarea>
+							    </fieldset>
+
+							    <button class="button-success pure-button button-xlarge">
+							      Подтвердить</button>
+
+							  </form>
+
+							  <div style="display:none;" id="thankyou_message">
+							    <h2>Спасибо за регистрацию на мероприятия!
+							      Мы свяжемся с вами вскоре!</h2>
+							  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+        
+
         	<section id="fh5co-intro">
 		<div class="container">
 			
@@ -256,9 +376,10 @@
 	
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+
+	<script src="js/custom1.js"></script>
+
+	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 	<script src="js/main.js"></script>
     </body>
 </html>
