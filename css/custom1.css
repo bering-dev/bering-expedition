@@ -115,7 +115,7 @@ a, a:hover, a:active, a:focus,
 }
 
 
-#fh5co-events .event-subtitle {
+#fh5co-events .event-title {
   margin-bottom: 0.5rem;
   color: #444;
 }
@@ -130,9 +130,16 @@ a, a:hover, a:active, a:focus,
   margin-bottom: 0.5rem;
 }
 
-#fh5co-events .event-small-block:nth-child(even) {
+#fh5co-events .event-small-block {
   background-color: #eee;
+  cursor: pointer;
+  min-height: 15rem;
 }
+
+#fh5co-events .event-small-block.active {
+  background-color: white;
+}
+
 #fh5co-events .event-small-block h3{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -149,6 +156,10 @@ a, a:hover, a:active, a:focus,
 
 #fh5co-events .blue-form, #fh5co-events .blue-form h3 {
   color: white;
+}
+
+.pure-group {
+  margin-bottom: 0.5rem;
 }
 
 .pure-group > label {
