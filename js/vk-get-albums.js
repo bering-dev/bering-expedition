@@ -5,7 +5,6 @@
           console.log('VK error:', data); return;
       }
       var images = data.response;
-      console.log('image')
       html = ''
       for(var i = 0; i<images.length; i++){
         //html += '<div class="image-block">'
