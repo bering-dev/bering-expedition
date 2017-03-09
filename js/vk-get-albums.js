@@ -1,7 +1,6 @@
 ;(function () {
   function gotAlbum( data){
 
-      // src_xbig --> 807x538
       if( !data || !data.response) {
           console.log('VK error:', data); return;
       }
@@ -21,22 +20,6 @@
 
       jssor_1_slider_init();
       return;
-      var html, i, al;
-
-      if( !data || !data.response) {
-          console.log('VK error:', data); return;
-      }
-      html = '<div class="row">';
-      for( i=0; i<data.response.length;i++) {
-          al = data.response[i];
-          html = html
-              +'<div class="col-xs-6 col-md-3">'
-              +'<a href="https://vk.com/album'+al.owner_id+'_'+al.aid+'" target="_blank"  class="thumbnail">'
-              +'<img src="'+al.thumb_src+'" title="'+al.title+'" alt="">'
-              +'</a></div>';
-      }
-      html = html + '</div>';
-      $('#out').html( html);
   }
 
   function vkApi( method, params, callback) {

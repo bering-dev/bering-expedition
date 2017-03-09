@@ -73,7 +73,6 @@
   })
 
   var readEvents = function(){
-    https://docs.google.com/spreadsheets/d/1UrYhCsQffzEEnfo03odvmlWWg9Goa7xd0-xAff6EJA8/pubhtml
     $.getJSON("https://spreadsheets.google.com/feeds/list/1UrYhCsQffzEEnfo03odvmlWWg9Goa7xd0-xAff6EJA8/od6/public/values?alt=json", function(data) {
       var entryList = data.feed.entry;
       var entry;
