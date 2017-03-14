@@ -48,7 +48,9 @@
 
     
     
-    <link rel="stylesheet" href="css/custom1.css">
+    <link rel="stylesheet" href="css/custom1-v2.css">
+    
+    <link rel="stylesheet" href="css/font.css">
     
 
     
@@ -103,6 +105,18 @@
         
     </div>
 </header>
+
+<nav class="bering-social">
+    <ul>
+        <li>
+            <a href="https://vk.com/bering_sever"><i class="icon bering-icon-vk"></i></a>
+            </li>
+        
+        <li>
+            <a href="https://www.youtube.com/channel/UC60bucY8xDnKZyAO5xfb0jg"><i class="icon bering-icon-youtube"></i></a>
+        </li>
+    </ul>
+</nav>
 
 			<section id="fh5co-home" data-section="home">
 		<div class="container">
@@ -206,6 +220,9 @@
 						<div class="col-md-8 col-md-offset-2 subtext to-animate">
 							<h3>Города-участники.<br/>Информация о маршруте экспедиции.</h3>
 						</div>
+						<div class="col-md-12 text-center">
+							<iframe src="https://api-maps.yandex.ru/frame/v1/-/C6AHNZ42" width="760" height="600" frameborder="0"></iframe>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -221,7 +238,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="row">
-						<div class="col-md-8 to-animate top-gap events-info-column">
+						<div class="col-md-8 to-animate events-info-column">
 							<div class="section-heading">
 								<h2>Ближайшие мероприятия</h2>
 							</div>
@@ -250,7 +267,7 @@
 							</div>
 						</div>
 						<div class="col-md-4 to-animate blue-form">
-							<h3 class='top-gap text-center'>Регистрация</h3>
+							<h3 class='text-center'>Регистрация</h3>
 							  <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycbxInPNCq4Mgdr_ttU7E8T9zheCDkjHs6VsWaQdYTF1d0MxeIgQ/exec">
 							    
@@ -318,15 +335,15 @@
 
 
 				<div class="col-md-8">
-					<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:700px;height:480px;overflow:hidden;visibility:hidden;background-color:#00a9d1;">
-			        
-			        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
-			            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-			            <div style="position:absolute;display:block;background:url('images/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-			        </div>
+					<div id="jssor_1" style="position:relative;top:0px;left:0px;width:700px;height:480px;overflow:hidden;visibility:hidden;background-color:#00a9d1;">
+    			        
+    			        <div data-u="loading" style="position:absolute;top:0px;left:0px;background-color:rgba(0,0,0,0.7);">
+    			            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+    			            <div style="position:absolute;display:block;background:url('images/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+    			        </div>
 
-			        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:700px;height:480px;overflow:hidden;">
-		          </div>
+    			        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:700px;height:480px;overflow:hidden;">
+    		            </div>
 
 							
 			        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;top:0;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
@@ -342,8 +359,8 @@
 			            
 			        </div>
 			        
-			        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
-			        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+			        <span data-u="arrowleft" class="jssora05l" style="top:228px;left:8px;width:40px;height:40px;"></span>
+			        <span data-u="arrowright" class="jssora05r" style="top:228px;right:8px;width:40px;height:40px;"></span>
 			  	</div>
 				</div>
 
@@ -351,8 +368,12 @@
 
 				<div class='col-md-4 blue-form'>
 					<h3 class='to-animate'>Автопробег по маршруту Оса – Каменск-Уральский – Екатеринбург</h3>
+                    <p></p>
 				</div>
 			</div>
+
+            <div class="row" role='album-selector'>
+            </div>
 		</div>
 	</section>
 
@@ -440,8 +461,8 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
 
-	<script src="js/custom1-v3.js"></script>
-	<script src="js/vk-get-albums.js"></script>
+	<script src="js/custom1-v4.js"></script>
+	<script src="js/vk-get-albums-v2.js"></script>
 	<script src="js/slider/jssor.slider-22.2.16.mini.js"></script>
 
 	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler-v4.js"></script>
