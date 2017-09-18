@@ -113,7 +113,7 @@
     ];
 
     var jssor_1_options = {
-      $AutoPlay: true,
+      $AutoPlay: 4,
       $FillMode: 1,
       $SlideshowOptions: {
         $Class: $JssorSlideshowRunner$,
