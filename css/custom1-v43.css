@@ -219,8 +219,6 @@ a, a:hover, a:active, a:focus,
   position: absolute;
   top: 15px;
   left: 50%;
-  background-color: #00a9d1;
-  padding: 5px 10px;
   color: #fff;
   text-shadow: 0 0 2px #000;
   display: none;

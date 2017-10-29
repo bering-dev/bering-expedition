@@ -31,18 +31,10 @@ function onYouTubeIframeAPIReady() {
         for(var i=0; i<items.length;i++){
           var item = items[i];
           var videoId = item.id.videoId;
-          /*videos.push({
-            title: item.snippet.title,
-            href: 'https://www.youtube.com/watch?v='+videoId,
-            youtube: videoId,
-            poster: item.snippet.thumbnails.high.url,
-            type: 'text/html'
-          })*/
           videos.push({
             id: videoId,
             title: item.snippet.title
           });
-          //console.log(item.id.videoId, item.snippet.title);
         }
 
         videoTitle.text(videos[curVideoInd].title)
@@ -71,7 +63,6 @@ function onYouTubeIframeAPIReady() {
   var videoTitle = $('.title', overlay);
 
   overlay.on('click', function(event){
-    console.log('click')
     if (iframeObj){
       overlay.hide();
       iframeObj.playVideo();
