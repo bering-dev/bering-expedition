@@ -42,9 +42,11 @@
     
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/blueimp-gallery/blueimp-gallery.min.css">
+
     
     
-    <link rel="stylesheet" href="css/custom1-v42.css">
+    <link rel="stylesheet" href="css/custom1-v43.css">
     
     <link rel="stylesheet" href="css/font.css">
     
@@ -174,7 +176,7 @@
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon  to-animate-2"></i>
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="7" data-speed="700" data-refresh-interval="50">7</span>
-						<span class="fh5co-counter-label">республик<br/><br/>Бурятия, Марий Эл, Саха (Якутия),<br/>Татарстан, Удмуртия, <br/>Хакасия, Чувашия</span>
+						<span class="fh5co-counter-label">республик<br/><br/>Бурятия, Марий Эл, Саха (Якутия), Татарстан, Удмуртия, Хакасия, Чувашия</span>
 					</div>
 				</div>
 			
@@ -182,15 +184,15 @@
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon  to-animate-2"></i>
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="5" data-speed="700" data-refresh-interval="50">5</span>
-						<span class="fh5co-counter-label">краёв<br/><br/>Алтайский, Камчатский,<br/>Красноярский, Пермский, Хабаровский.</span>
+						<span class="fh5co-counter-label">краёв<br/><br/>Алтайский, Камчатский, Красноярский, Пермский, Хабаровский.</span>
 					</div>
 				</div>
 			
 				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon  to-animate-2"></i>
-						<span class="fh5co-counter-number js-counter" data-from="0" data-to="13" data-speed="700" data-refresh-interval="50">13</span>
-						<span class="fh5co-counter-label">областей<br/><br/>Вологодская, Иркутская, <br/>Кемеровская, Костромская, <br/>Ленинградская, Нижегородская, <br/>Новгородская, Омская, <br/>Свердловская, Тверская, Тульская,<br/> Тюменская, Ярославская.</span>
+						<span class="fh5co-counter-number js-counter" data-from="0" data-to="14" data-speed="700" data-refresh-interval="50">14</span>
+						<span class="fh5co-counter-label">областей<br/><br/>Вологодская, Иркутская, Кемеровская, Костромская, Ленинградская, Нижегородская, Новгородская, Новосибирская, Омская, Свердловская, Тверская, Томская, Тульская, Тюменская, Ярославская.</span>
 					</div>
 				</div>
 			
@@ -198,7 +200,7 @@
 					<div class="fh5co-counter to-animate">
 						<i class="fh5co-counter-icon  to-animate-2"></i>
 						<span class="fh5co-counter-number js-counter" data-from="0" data-to="2" data-speed="1200" data-refresh-interval="50">2</span>
-						<span class="fh5co-counter-label">автономных округа<br/><br/>Ханты-Мансийский — Югра,<br/>Ямало-Ненецкий</span>
+						<span class="fh5co-counter-label">автономных округа<br/><br/>Ханты-Мансийский — Югра, Ямало-Ненецкий</span>
 					</div>
 				</div>
 			
@@ -312,16 +314,21 @@
 
         
             	<section id="fh5co-testimonials" data-section='testimonials'>
-		<div class="container">
+		<div class="container" style='height: 800px;'>
 			
-			<div class="row watch-video text-center to-animate">
-				
-				<span></span>
-
-				<a href="https://www.youtube.com/watch?v=Z1w-b34vf4k" class="popup-vimeo btn-video"><i class="icon-play2"></i></a>
+			<div class='video-overlay'>
+				<div class='container video-overlay-controls'>
+					<h3 class='title'></h3>
+					<a class="prev">‹</a>
+					<a class="next">›</a>
+			  </div>
 			</div>
+
+			<div id='player' class='video-placeholder'>
+				
+			</div>
+
 			
-		</div>
 	</section>
         
 
@@ -462,8 +469,12 @@
 	<script src="js/vk-get-albums-v41.js"></script>
 	<script src="js/slider/jssor.slider-22.2.16.mini.js"></script>
 
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 	<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler-v5.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/youtube-player.js"></script>
 
 
 <script type="text/javascript">
