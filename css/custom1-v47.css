@@ -323,6 +323,9 @@ a, a:hover, a:active, a:focus,
   width: 33%;
   padding: 5px 10px;
 }
+#fh5co-events .event-small-block:first-child{
+  padding-left: 15px;
+}
 
 #fh5co-events .event-small-block.active {
   background-color: white;
