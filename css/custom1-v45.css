@@ -281,7 +281,7 @@ a, a:hover, a:active, a:focus,
 /* EVENTS */
 
 #fh5co-events {
-  padding-top: 2em;
+  padding-top: 3em;
   padding-bottom: 7em;
 }
 
@@ -304,7 +304,11 @@ a, a:hover, a:active, a:focus,
 }
 
 #fh5co-events .events-info-column {
-  padding-right: 5rem;
+  padding-right: 0.5rem;
+}
+
+#fh5co-events .events-info-column p{
+  font-size: 17px;
 }
 
 #fh5co-events .event-image-block {
@@ -358,6 +362,10 @@ a, a:hover, a:active, a:focus,
   color: white;
 }
 
+#fh5co-events .blue-form {
+  padding: 5px 10px;
+}
+
 .pure-group {
   margin-bottom: 0.5rem;
 }
@@ -397,7 +405,7 @@ a, a:hover, a:active, a:focus,
 
 /* ALBUMS SECTION */
 #fh5co-albums {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 #fh5co-albums [role=image-container] {
