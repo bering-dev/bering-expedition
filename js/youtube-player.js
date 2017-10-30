@@ -26,7 +26,7 @@ function onYouTubeIframeAPIReady() {
         'type': 'video',
         'maxResults': 50
       }).then(function(response) {
-        console.log(response.result);
+        //console.log(response.result);
         var items = response.result.items;
         for(var i=0; i<items.length;i++){
           var item = items[i];
