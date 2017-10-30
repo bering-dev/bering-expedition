@@ -55,7 +55,7 @@
       var css;
       var ratio=$(this).width() / $(this).height();
       var pratio=$(this).parent().width() / $(this).parent().height();
-      if (ratio<pratio) css={width:'auto', height:'100%'};
+      if (ratio<pratio) css={width:'100%', height:'auto'};
       else css={width:'100%', height:'auto'};
       $(this).css(css);
     }).on('load', function(){
